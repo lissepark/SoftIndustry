@@ -1,0 +1,56 @@
+.page-header {
+	background-color: #f8b005;
+}
+
+div.logo1 {
+  width: 50%;
+  height:18%;
+  margin:auto;
+  padding:1%;
+  text-align:center;
+  border:2px solid #FFF;
+  border-radius:20px;
+  -moz-border-radius:20px;
+  -webkit-border-radius:20px;
+  font-size:200%;  
+  color:#FFF;
+}
+
+.ngview {
+  float: right;
+  width: 50%;
+}
+
+.countryList {
+  border-bottom: 1px solid blue;
+}
+
+.countryList:hover {
+  background-color: #fffe91;
+}
+
+.leftNav {
+  width: 40%;
+}
+
+.countryName {
+  margin: auto;
+  width: 30%
+}
+
+.countryName p {
+  margin: auto;
+  font-size: 100%;
+}
+
+.cityList {
+  border-bottom: 1px solid green;
+}
+
+.cityList:hover {
+  background-color: #91ffd4;
+}
+
+.clear {
+  clear: both;
+}

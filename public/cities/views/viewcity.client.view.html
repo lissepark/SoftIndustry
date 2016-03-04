@@ -1,0 +1,12 @@
+<section data-ng-controller="CitiesController" data-ng-init="findOne()">
+<h1 data-ng-bind="city.title"></h1>
+<a href="/#!/cities/{{city._id}}/edit">edit</a>
+<a href="#" data-ng-click="delete();">delete</a>
+</div>
+<small>
+<em>Country</em>
+<em data-ng-bind="city.country"></em>
+</small>
+<p data-ng-bind="city.desc"></p>
+<p>To <a href="/#!/cities">All Cities</a></p>
+</section>

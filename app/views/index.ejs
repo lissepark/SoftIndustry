@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<title><%= title %></title>
+    	<link href="css/css_main.css" rel="stylesheet">
+</head>
+<body ng-controller="RootController">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<div class="page-header">
+	<div class="logo1">SERGII VARENYK <br>solution of the second test <br>(Soft Industry)</div>
+	</div>
+
+	<div class="ngview" ng-view></div>
+	<div class="leftNav" ng-if="currentRoute.leftNav">
+    	<div ng-include="currentRoute.leftNav"></div>
+	</div>
+	<div class="clear"></div>
+
+	<script type="text/javascript" src="/lib/angular/angular.js"></script>
+	<script type="text/javascript" src="/lib/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="/lib/angular-resource/angular-resource.js"></script>
+	<script type="text/javascript" src="/lib/angular-sanitize/angular-sanitize.js"></script>	
+
+	<script type="text/javascript" src="/cities/cities.client.module.js"></script>
+	<script type="text/javascript" src="/cities/controllers/cities.client.controller.js"></script>
+	<script type="text/javascript" src="/cities/services/cities.client.service.js"></script>
+	<script type="text/javascript" src="/cities/config/cities.client.routes.js"></script>
+
+	<script type="text/javascript" src="/country/country.client.module.js"></script>
+	<script type="text/javascript" src="/country/config/country.client.routes.js"></script>
+	<script type="text/javascript" src="/country/controllers/country.client.controller.js"></script>
+	<script type="text/javascript" src="/country/services/country.client.service.js"></script>
+	
+
+	<script type="text/javascript" src="/example/example.client.module.js"></script>
+	<script type="text/javascript" src="/example/controllers/example.client.controller.js"></script>
+	<script type="text/javascript" src="/example/config/example.client.routes.js"></script>
+	<script type="text/javascript" src="/example/controllers/root.client.controller.js"></script>
+	
+	<script type="text/javascript" src="/application.js"></script>
+
+	<script type="text/javascript">
+	
+	</script>
+
+</body>
+</html>

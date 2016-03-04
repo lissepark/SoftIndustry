@@ -1,0 +1,24 @@
+<section data-ng-controller="CountriesController">
+<h1>New Country</h1>
+<form data-ng-submit="create()" novalidate>
+<div>
+<label for="title">Title</label>
+<div>
+<input type="text" data-ng-model="title" id="title" placeholder="Title" required>
+</div>
+</div>
+<div>
+<label for="desc">Desc</label>
+<div>
+<textarea data-ng-model="text" id="text" cols="30" rows="10" placeholder="Text"></textarea>
+</div>
+</div>
+<div>
+<input type="submit">
+</div>
+<div data-ng-show="error">
+<strong data-ng-bind="error"></strong>
+</div>
+</form>
+<p>Back to <a href="/#!/countries">All Countries</a></p>
+</section>

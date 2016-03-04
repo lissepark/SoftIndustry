@@ -1,0 +1,22 @@
+<section data-ng-controller="CitiesController" data-ng-init="find()">
+<h1>Cities</h1>
+<ul>
+<li><a href="/#!/cities">All Cities</a></li>
+<li><a href="/#!/cities/create">Create City</a></li>
+</ul>
+<ul>
+<li data-ng-repeat="city in cities">
+<a data-ng-href="#!/cities/{{city._id}}" data-ng-bind="city.title"></a>
+<br>
+
+<p data-ng-bind="city.country"></p>
+<br>
+<p data-ng-bind="city.desc"></p>
+</li>
+</ul>
+
+<div data-ng-hide="!cities || cities.length">
+No cities yet, why don't you <a href="/#!/cities/create">create one</a>?
+</div>
+
+</section>
