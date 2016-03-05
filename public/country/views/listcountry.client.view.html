@@ -3,7 +3,7 @@
 	<ul>
 		<li class="countryList" data-ng-repeat="country in countries">
 			<a data-ng-href="#!/countries/{{country._id}}" data-ng-bind="country.title"></a><br>
-			<p data-ng-bind="country.text"></p>
+			<p data-ng-bind-html="country.text"></p>
 		</li>
 	</ul>
 </section>
